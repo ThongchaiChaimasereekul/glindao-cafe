@@ -43,7 +43,7 @@ function App() {
       price: "888", 
       description: "เมนูช็อกโกแลตซิกเนเจอร์ เข้มข้นระดับพรีเมียม ผสานความกรุบกรอบที่ทำให้คุณรู้สึก 'Yippy' ทุกคำ", 
       img: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=600", 
-      category: "Signature Drink" 
+      category: "Bakery" 
     },
   ];
 
