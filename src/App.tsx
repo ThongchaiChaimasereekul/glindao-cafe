@@ -1,4 +1,4 @@
-import { Facebook, Instagram, ArrowUp} from 'lucide-react';
+import { Facebook, Instagram, ArrowUp } from 'lucide-react';
 import logoImg from './assets/logo.jpg'
 import banoffeeImg from './assets/banoffee.png'
 
@@ -13,59 +13,59 @@ interface MenuItem {
 
 function App() {
   const menu: MenuItem[] = [
-    { 
-      id: 1, 
-      name: "Signature Banoffee", 
-      price: "888", 
-      description: "บานอฟฟี่เลเยอร์หนานุ่ม กล้วยหอมคัดเกรดราดซอสคาราเมลโฮมเมด และครีมสดละมุนลิ้น", 
-      img: banoffeeImg, 
-      category: "Signature" 
+    {
+      id: 1,
+      name: "Signature Banoffee",
+      price: "888",
+      description: "บานอฟฟี่เลเยอร์หนานุ่ม กล้วยหอมคัดเกรดราดซอสคาราเมลโฮมเมด และครีมสดละมุนลิ้น",
+      img: banoffeeImg,
+      category: "Signature"
     },
-    { 
-      id: 2, 
-      name: "Classic English Scone", 
-      price: "888", 
-      description: "สโคนสูตรดั้งเดิม อบสดใหม่ทุกเช้า ผิวนอกกรอบในนุ่ม เสิร์ฟพร้อมแยมเบอร์รี่และคล็อตเต็ดครีม", 
-      img: "https://images.unsplash.com/photo-1589114471223-dec0d8d572c6?w=600", 
-      category: "Bakery" 
+    {
+      id: 2,
+      name: "Classic English Scone",
+      price: "888",
+      description: "สโคนสูตรดั้งเดิม อบสดใหม่ทุกเช้า ผิวนอกกรอบในนุ่ม เสิร์ฟพร้อมแยมเบอร์รี่และคล็อตเต็ดครีม",
+      img: "https://images.unsplash.com/photo-1589114471223-dec0d8d572c6?w=600",
+      category: "Bakery"
     },
-    { 
-      id: 3, 
-      name: "Burnt Cheesecake", 
-      price: "888", 
-      description: "ชีสเค้กหน้าไหม้สไตล์บาสก์ เนื้อเนียนนุ่ม หอมกลิ่นไหม้นิดๆ รสชาติชีสเข้มข้นจากสเปน", 
-      img: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600", 
-      category: "Bakery" 
+    {
+      id: 3,
+      name: "Burnt Cheesecake",
+      price: "888",
+      description: "ชีสเค้กหน้าไหม้สไตล์บาสก์ เนื้อเนียนนุ่ม หอมกลิ่นไหม้นิดๆ รสชาติชีสเข้มข้นจากสเปน",
+      img: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600",
+      category: "Bakery"
     },
-    { 
-      id: 4, 
-      name: "Yippy Choc", 
-      price: "888", 
-      description: "เมนูช็อกโกแลตซิกเนเจอร์ เข้มข้นระดับพรีเมียม ผสานความกรุบกรอบที่ทำให้คุณรู้สึก 'Yippy' ทุกคำ", 
-      img: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=600", 
-      category: "Bakery" 
+    {
+      id: 4,
+      name: "Yippy Choc",
+      price: "888",
+      description: "เมนูช็อกโกแลตซิกเนเจอร์ เข้มข้นระดับพรีเมียม ผสานความกรุบกรอบที่ทำให้คุณรู้สึก 'Yippy' ทุกคำ",
+      img: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=600",
+      category: "Bakery"
     },
   ];
 
   return (
     <div className="min-h-screen w-full bg-brand-cream font-sans text-brand-dark overflow-x-hidden">
-      
+
       {/* --- HEADER พร้อม LOGO --- */}
       <header className="relative w-full py-20 md:py-28 px-4 text-center overflow-hidden">
         {/* พื้นหลังบิดเบี้ยวสีแดงเลือดหมู */}
         <div className="absolute inset-0 bg-gradient-to-br from-brand-red to-brand-dark -skew-y-3 origin-top-left scale-150 shadow-2xl"></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
-          
+
           {/* --- ส่วนของ LOGO --- */}
           <div className="mb-6 group">
-             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:border-white/50">
-                <img 
-                  src={logoImg} 
-                  alt="Glindao Cafe Logo" 
-                  className="w-full h-full object-cover"
-                />
-             </div>
+            <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:border-white/50">
+              <img
+                src={logoImg}
+                alt="Glindao Cafe Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           <h1 className="text-5xl md:text-8xl font-serif text-white font-bold mb-4 drop-shadow-lg tracking-tighter">
@@ -74,7 +74,17 @@ function App() {
           <p className="text-white/80 text-sm md:text-xl font-light tracking-[0.3em] uppercase">
             Experience the finest roast
           </p>
-          
+
+          {/* {ปุ่ม expore menu} */}
+          <div className='mt-10'>
+          <a 
+            href="#menu-section"
+            className="bg-white text-brand-red px-8 py-3 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-brand-cream transition-all duration-300 shadow-xl"
+          >
+            Explore Menu
+          </a>
+          </div>
+
           {/* เส้นขีดตกแต่งเล็กๆ */}
           <div className="w-12 h-1 bg-white/30 mt-8 rounded-full"></div>
         </div>
@@ -82,7 +92,7 @@ function App() {
 
       {/* --- MENU SECTION --- */}
       {/* ใช้ max-w-7xl เพื่อไม่ให้คอนเทนต์แผ่กว้างเกินไปจนอ่านยากในจอคอม (Ultra Wide) */}
-      <main className="max-w-7xl mx-auto py-16 px-6">
+      <main id="menu-section" className="max-w-7xl mx-auto py-16 px-6">
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <div className="border-l-4 border-brand-red pl-6">
@@ -197,7 +207,7 @@ function App() {
       <footer className="w-full bg-brand-dark text-brand-cream pt-16 pb-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-            
+
             {/* ฝั่งซ้าย: แบรนด์ */}
             <div className="text-center md:text-left">
               <h2 className="font-serif text-3xl mb-2 tracking-tighter">Glindao Cafe</h2>
@@ -206,22 +216,22 @@ function App() {
 
             {/* ฝั่งกลาง: Social Media Icons (ใส่ลิงก์จริงได้ที่ href) */}
             <div className="flex gap-6 items-center">
-              <a href="https://www.facebook.com/glindao.cafe" target="_blank" rel="noreferrer" 
-                 className="p-3 bg-white/5 rounded-full hover:bg-brand-red transition-all duration-300 group">
+              <a href="https://www.facebook.com/glindao.cafe" target="_blank" rel="noreferrer"
+                className="p-3 bg-white/5 rounded-full hover:bg-brand-red transition-all duration-300 group">
                 <Facebook size={20} className="group-hover:scale-110" />
               </a>
               <a href="https://www.instagram.com/glindao.cafe/" target="_blank" rel="noreferrer"
-                 className="p-3 bg-white/5 rounded-full hover:bg-brand-red transition-all duration-300 group">
+                className="p-3 bg-white/5 rounded-full hover:bg-brand-red transition-all duration-300 group">
                 <Instagram size={20} className="group-hover:scale-110" />
               </a>
             </div>
 
             {/* ฝั่งขวา: ปุ่มกลับด้านบนแบบมี Icon */}
-            <button 
+            <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="group flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase opacity-50 hover:opacity-100 transition-all font-bold"
             >
-              Back to top 
+              Back to top
               <div className="p-2 border border-brand-cream/20 rounded-full group-hover:-translate-y-1 transition-transform">
                 <ArrowUp size={14} />
               </div>
