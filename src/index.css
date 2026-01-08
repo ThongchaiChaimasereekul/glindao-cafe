@@ -2,27 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ล้างค่าเดิมที่ Vite ใส่มาให้ */
-:root {
-  /* ปล่อยให้ Tailwind และ App.tsx จัดการสีเอง */
-  background-color: transparent; 
-}
+@layer base{
+  html{
+    /* 1. Smooth Scroll: เลื่อนนุ่มๆ */
+    scroll-behavior: smooth;
+    /* 2. Scroll Padding: กัน Navbar บังหัวข้อเวลาเลื่อนลงมา (เผื่อทำ Sticky Navbar) */
+    scroll-padding-top: 2rem;
+  }
 
-body {
-  margin: 0;
-  /* ลบ display: flex และ place-items: center ออก */
-  /* เพราะมันจะทำให้คอนเทนต์ทั้งหมดมากองอยู่ตรงกลางจอแบบแปลกๆ */
-  display: block; 
-  min-width: 100%;
-  min-height: 100vh;
-}
-
-/* เพิ่ม Smooth Scroll ให้เว็บดูพรีเมียม */
-html {
-  scroll-behavior: smooth;
-}
-
-/* ป้องกัน Horizontal Scroll (การเลื่อนซ้ายขวาที่ไม่ได้ตั้งใจ) */
-body {
-  overflow-x: hidden;
+  body{
+    margin: 0;
+    /* 3. ลบข้อจำกัดจาก Vite และเตรียมพื้นที่ให้ Tailwindจัดการ */
+    display: block;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* 4. ใส่สีพื้นหลังหลักที่นี่เลย เพื่อกันรอยต่อเวลา Scroll */
+    @apply bg-brand-cream text-brand-dark;
+  }
 }
