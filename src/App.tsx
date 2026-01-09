@@ -1,8 +1,8 @@
 import { menuData } from './data/menu';
+import { MenuCard } from './components/MenuCard';
 import { Hero } from './components/Hero';
 import { Location } from './components/Location';
 import { Footer } from './components/Footer';
-import { MenuCard } from './components/menuCard';
 
 function App() {
   return (
