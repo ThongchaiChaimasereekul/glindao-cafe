@@ -2,7 +2,7 @@ import { menuData } from './data/menu';
 import { Hero } from './components/Hero';
 import { Location } from './components/Location';
 import { Footer } from './components/Footer';
-import { MenuCard } from './components/menuCard';
+import { MenuCard } from './components/MenuCard';
 
 function App() {
   return (
