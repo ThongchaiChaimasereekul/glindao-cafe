@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 import logoImg from '../assets/logo.jpg';
 
 export const Hero = () => {
@@ -21,10 +20,19 @@ export const Hero = () => {
           Experience the finest roast
         </p>
         
-        <div className="mt-10">
+        {/* Buttons Group */}
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center">
+          {/* AboutUs */}
+          <a 
+            href="#about-section" 
+            className="w-full sm:w-auto bg-transparent text-white border-2 border-white/40 px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white/10 hover:border-white transition-all duration-300 backdrop-blur-sm hover:-translate-y-1 active:scale-95"
+          >
+            Our Story
+          </a>
+          {/* Menu */}
           <a 
             href="#menu-section" 
-            className="bg-white text-brand-red px-8 py-3 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-brand-cream transition-all duration-300 shadow-xl"
+            className="w-full sm:w-auto bg-white text-brand-red px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-brand-cream transition-all duration-300 shadow-xl hover:-translate-y-1 active:scale-95"
           >
             Explore Menu
           </a>
