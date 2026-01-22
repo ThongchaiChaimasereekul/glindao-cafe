@@ -30,7 +30,7 @@ export const MenuCard = ({ item }: { item: MenuItem }) => (
           </h3>
         </div>
         
-        <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-light line-clamp-2 mb-4">
+        <p className="text-gray-500 font-serif text-xs md:text-sm leading-relaxed font-light line-clamp-2 mb-4">
           {item.description}
         </p>
       </div>

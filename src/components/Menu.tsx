@@ -19,7 +19,7 @@ const Menu = () => {
         
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-100 to-red-400 mb-4 uppercase tracking-tighter">
+          <h2 className="text-5xl font-serif font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-100 to-red-400 mb-4 uppercase tracking-tighter">
             Our Divine Menu
           </h2>
           <div className="flex justify-center items-center gap-4 mb-8">
