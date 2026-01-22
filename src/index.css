@@ -2,21 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  html{
-    /* 1. Smooth Scroll: เลื่อนนุ่มๆ */
+@layer base {
+  html {
     scroll-behavior: smooth;
-    /* 2. Scroll Padding: กัน Navbar บังหัวข้อเวลาเลื่อนลงมา (เผื่อทำ Sticky Navbar) */
-    scroll-padding-top: 2rem;
   }
-
-  body{
-    margin: 0;
-    /* 3. ลบข้อจำกัดจาก Vite และเตรียมพื้นที่ให้ Tailwindจัดการ */
-    display: block;
-    min-height: 100vh;
-    overflow-x: hidden;
-    /* 4. ใส่สีพื้นหลังหลักที่นี่เลย เพื่อกันรอยต่อเวลา Scroll */
-    @apply bg-brand-cream text-brand-dark;
+  body {
+    @apply bg-brand-dark text-white antialiased;
   }
 }

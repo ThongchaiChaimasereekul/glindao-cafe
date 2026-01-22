@@ -5,7 +5,7 @@ export const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <footer className="w-full bg-brand-dark text-brand-cream pt-16 pb-8 px-6">
+    <footer className="w-full bg-gradient-to-br from-brand-red to-brand-dark text-brand-cream pt-16 pb-8 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="text-center md:text-left">
