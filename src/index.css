@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,9 @@
     scroll-behavior: smooth;
     /* 2. Scroll Padding: กัน Navbar บังหัวข้อเวลาเลื่อนลงมา (เผื่อทำ Sticky Navbar) */
     scroll-padding-top: 2rem;
+    /* Font */
+    font-family: 'Kanit', sans-serif; /* ใส่ชื่อ Font ที่ร้านคุณใช้ เช่น Kanit หรือ Prompt */
+    scroll-behavior: smooth;;
   }
 
   body{
