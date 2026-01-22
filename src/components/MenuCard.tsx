@@ -41,7 +41,7 @@ export const MenuCard = ({ item }: { item: MenuItem }) => (
           <span className="text-[10px] text-gray-400 uppercase tracking-tighter">Price</span>
           <div className="flex items-baseline gap-1">
             <span className="text-xl md:text-2xl font-black text-gray-900 leading-none">
-              {item.price}
+              {/* {item.price} */}
             </span>
             <span className="text-[10px] font-bold text-brand-red">THB</span>
           </div>
